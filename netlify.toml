@@ -1,0 +1,8 @@
+[build]
+    command = "make build-functions"
+[[redirects]]
+    from = "/*"
+    to = "./netlify/functions/:splat"
+    status = 200
+[functions]
+    directory = "functions/bin"
